@@ -136,4 +136,19 @@ body {
 #mainpanel {
     background-color: #E2E8F0;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 350px;
+    box-shadow: inset 0px 14px 5px -10px rgb(0 0 0 / 10%);
+}
+
+#main_projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#main_announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#main_trending {
+    grid-area: 2 / 2 / 3 / 3;
 }
