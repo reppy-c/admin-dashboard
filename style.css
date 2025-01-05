@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     display: grid;
-    grid-template: 175px 1fr / 300px 1fr;
+    grid-template: 180px 1fr / 300px 1fr;
     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -48,7 +48,10 @@ body {
 #header {
     background-color: #fff;
     grid-area: 1 / 2 / 2 / 3;
-    padding: 12px 36px;
+    padding: 24px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #topheader {
@@ -57,16 +60,16 @@ body {
     justify-content: space-between;
 }
 
-#topheader #left_items {
+.left_items {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-#topheader #right_items {
+.right_items {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
 }
 
 #topheader .icon {
@@ -88,11 +91,44 @@ body {
 #bottomheader {
     display:flex;
     flex-direction: row;
-
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
 }
 
 #bottomheader img {
-    height: 72px;
+    height: 68px;
+}
+
+#bottomheader .right_items {
+    gap: 12px;
+}
+
+#bottomheader button {
+    color: #fff;
+    background-color: #1992D4;
+    border: 0;
+    height: 44px;
+    padding: 6px 32px;
+    border-radius: 50px;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#greeting #hello {
+    display:block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#greeting #name {
+    display:block;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 /************** Main panel styles **************/

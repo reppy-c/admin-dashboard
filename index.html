@@ -36,12 +36,12 @@
 
     <div id="header">
         <div id="topheader">
-            <div id="left_items">
+            <div class="left_items">
                 <img class="icon" src="ico/search.svg" />
                 <input type="text" />
             </div>
 
-            <div id="right_items">
+            <div class="right_items">
                 <img class="icon" src="ico/alarm.svg" />
                 <img class="avatar_sm" src="avatar.svg" />
                 <span>Morgan Oakley</span>
@@ -50,14 +50,18 @@
         </div>
 
         <div id="bottomheader">
-            <img src="avatar.svg" />
-            <div>
-                Hi there,
-                Morgan Oakley (@morgan)
+            <div class="left_items">
+                <img src="avatar.svg" />
+                <div id="greeting">
+                    <span id="hello">Hi there,</span>
+                    <span id="name">Morgan Oakley (@morgan)</span>
+                </div>
+            </div>    
+            <div class="right_items">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
         </div>
     </div>
 
