@@ -170,7 +170,6 @@ body {
     display: flex;
     flex-direction: row;
     box-shadow: 3px 3px 2px rgb(0 0 0 / 10%);
-    flex-grow: 1;
 }
 
 .project .leftbar {
@@ -191,7 +190,8 @@ body {
 }
 
 .project .content .project_desc {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 130%;
     flex-grow: 1;
     color: #888;
     margin-top: 12x;
@@ -221,20 +221,17 @@ body {
     flex-direction: column;
 }
 
-.announcements {
+.announcements, .trending {
     display:block;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding: 32px 24px 24px 24px;
 }
 
 .announcement:not(:last-child) {
     border-bottom: 1px solid #ddd;
     margin-bottom: 18px;
-}
-
-.announcements {
-    padding: 32px 24px;
 }
 
 .announcement_title {
@@ -245,6 +242,28 @@ body {
 
 .announcement_body {
     font-size: 13px;
+    line-height: 125%;
     color: #888;
     margin: 4px 0 16px 0;
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.trend img {
+    height: 50px}
+
+.trend_handle {
+    font-size: 13px;
+}
+
+.trend_desc {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
 }
