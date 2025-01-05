@@ -137,10 +137,18 @@ body {
     background-color: #E2E8F0;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 350px;
+    grid-template: 1fr 1fr / 1fr 270px;
     box-shadow: inset 0px 14px 5px -10px rgb(0 0 0 / 10%);
     padding: 24px;
-    gap: 16px;
+    gap: 24px;
+}
+
+
+#mainpanel h2 {
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 #main_projects {
@@ -152,19 +160,17 @@ body {
 }
 
 #main_projects h2 {
-    padding: 0;
-    margin: 0 0 -8px 0;
     grid-area:  1 / 1 / 2 / 3;
-    font-size: 18px;
-    font-weight: 500;
+    margin: 0 0 -8px 0;
 }
 
-.project {
+.tile {
     background-color: #fff;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     box-shadow: 3px 3px 2px rgb(0 0 0 / 10%);
+    flex-grow: 1;
 }
 
 .project .leftbar {
@@ -204,10 +210,40 @@ body {
 
 #main_announcements {
     grid-area: 1 / 2 / 2 / 3;
-    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
 }
 
 #main_trending {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 18px;
+}
+
+.announcements {
+    padding: 32px 24px;
+}
+
+.announcement_title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.announcement_body {
+    font-size: 13px;
+    color: #888;
+    margin: 4px 0 16px 0;
 }
